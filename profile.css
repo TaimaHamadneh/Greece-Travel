@@ -1,0 +1,244 @@
+
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: all .2s linear;
+    text-transform: capitalize;
+}
+body{
+    background:#dde8ee;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+
+.cont{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 25rem ;
+}
+.cont .title{
+    font-size: 3.5rem;
+    color: #243f4d;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
+.center{
+    width: 100%;
+    position: absolute;
+    top:5%;
+    left:47%;
+    transform: translate(-50%,-50%);
+}
+
+.letter{
+    color: #243f4d;
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+    transform: perspective(1000px) rotateX(35deg);
+}
+
+.letter .char1,
+.letter .char2,
+.letter .char3,
+.letter .char4,
+.letter .char5,
+.letter .char6,
+.letter .char7,
+.letter .char8,
+.letter .char9,
+.letter .char10,
+.letter .char11,
+.letter .char12,
+.letter .char13
+{
+    display: inline-block;
+    padding: 0 10px;
+    transition: .5s;
+    text-shadow: 0 5px 2px rgba(0,0,0,.1);
+    box-shadow: 10px 50px 20px rgba(0,0,0,.1);
+    filter: blur(0.5px);
+}
+
+.letter .char1,
+.letter .char3,
+.letter .char5,
+.letter .char7,
+.letter .char9,
+.letter .char11,
+.letter .char13
+{
+    background: #aac6d4;
+    transform: skewY(-15deg);
+}
+
+
+.letter .char2,
+.letter .char4,
+.letter .char6,
+.letter .char8,
+.letter .char10,
+.letter .char12
+{
+    transform: skewY(15deg);
+}
+
+.letter:hover .char1,
+.letter:hover .char2,
+.letter:hover .char3,
+.letter:hover .char4,
+.letter:hover .char5,
+.letter:hover .char6,
+.letter:hover .char7,
+.letter:hover .char8,
+.letter:hover .char9,
+.letter:hover .char10,
+.letter:hover .char11,
+.letter:hover .char12,
+.letter:hover .char13
+{
+    background:  #aac6d4;
+    transform: skewY(0deg);
+    filter: blur(0);
+    box-shadow: 0 2px 2px rgba(0,0,0,.1);
+}
+
+.cont .profile-con{
+    padding-top: 18rem ;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap: 5rem;
+}
+
+.cont .profile-con .profilee{
+    text-align: center;
+    padding:3rem 2rem;
+    background: #dde8ee;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    outline: .1rem solid #ccc;
+    outline-offset: -1.5rem;
+    cursor: pointer;
+}
+
+.cont .profile-con .profilee:hover{
+    outline: .2rem solid #243f4d;
+    outline-offset: 0;
+}
+
+.cont .profile-con .profilee img{
+    height: 25rem;
+}
+
+.cont .profile-con .profilee:hover img{
+    transform: scale(.9);
+}
+
+.cont .profile-con .profilee h3{
+    padding:.5rem 0;
+    font-size: 2rem;
+    color:#243f4d;
+}
+
+.cont .profile-con .profilee:hover h3{
+    color:#243f4d;
+}
+
+.cont .profile-con .profilee .info{
+    font-size: 2rem;
+    color:#243f4d;
+}
+
+.products-preview{
+    position: fixed;
+    top:0; left:0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.products-preview .preview{
+    display: none;
+    padding:2rem;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    margin:2rem;
+    width: 40rem;
+    height: 40rem;
+}
+
+.products-preview .preview.active{
+    display: inline-block;
+}
+
+.products-preview .preview img{
+    height: 20rem;
+    width: 25rem;
+}
+
+.products-preview .preview .fa-times{
+    position: absolute;
+    top:1rem; right:1.5rem;
+    cursor: pointer;
+    color:#444;
+    font-size: 4rem;
+}
+
+.products-preview .preview .fa-times:hover{
+    transform: rotate(90deg);
+}
+
+.products-preview .preview h3{
+    color:#444;
+    padding:.5rem 0;
+    font-size: 4rem;
+    color: #243f4d;
+}
+
+.products-preview .preview p{
+    font-size: 1.5rem;
+    color: #243f4d;
+}
+
+
+
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .products-preview .preview img{
+        height: 25rem;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+}
+

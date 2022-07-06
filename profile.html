@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="AdmineStyle1.css">
+  <link rel="stylesheet" href="profile.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Boxicons CDN Link -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="jquery.lettering.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(".letter").lettering();}
+    );
+  </script>
+</head>
+<body>
+<div class="sidebar">
+  <div class="logo-details">
+    <div class="logo_name">Admin's List</div>
+    <i class='bx bx-menu' id="btn" ></i>
+  </div>
+  <ul class="nav-list">
+
+    <li>
+      <a href="profile.html">
+        <i class='bx bx-user' ></i>
+        <span class="links_name">Profile</span>
+      </a>
+      <span class="tooltip">Profile</span>
+    </li>
+
+    <li>
+      <a href="users.php">
+        <i class="fa fa-users" aria-hidden="true"></i>
+        <span class="links_name"> Users</span>
+      </a>
+      <span class="tooltip">Users</span>
+    </li>
+
+    <li>
+      <a href="adminp1.php">
+        <i class="fa fa-globe" aria-hidden="true"></i>
+        <span class="links_name">Trip</span>
+      </a>
+      <span class="tooltip">Trip</span>
+    </li>
+
+    <li>
+      <a href="adminMessage.php">
+        <i class='bx bx-chat' ></i>
+        <span class="links_name"> Messages</span>
+      </a>
+      <span class="tooltip"> Messages</span>
+    </li>
+
+
+
+
+
+    <li class="profile">
+      <div class="profile-details">
+        <!--<img src="profile.jpg" alt="profileImg">-->
+        <div class="name_job">
+          <a target="_top"  href="SignUpPage.html" >
+            <i class='bx bx-log-out' ></i>
+            <span class="links_name"></span>
+          </a>
+          <i class='bx bx-log-out' ></i>
+          <span class="links_name"></span>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+
+<div class="center">
+  <h1 class="letter">Admin Profile</h1>
+</div>
+
+
+
+<div class="cont">
+
+  <div class="profile-con">
+
+    <div class="profilee" data-name="p-1">
+      <img src="Images\q.jpg" width="250px" height="250px">
+      <h3>Rand Motaz</h3>
+      <div class="info">Owner</div>
+    </div>
+
+    <div class="profilee" data-name="p-2">
+      <img src="Images\q.jpg" width=250px" height="250px">
+      <h3>Taima Hamadneh</h3>
+      <div class="info">Owner</div>
+    </div>
+
+
+  </div>
+</div>
+
+
+<div class="products-preview">
+
+  <div class="preview" data-target="p-1">
+    <i class="fas fa-times"></i>
+    <img src="Images\q.jpg" width="300px" height="300px">
+    <h3>Rand Motaz</h3>
+
+    <p>Rand Motaz@gmail.com <br> BirthDate:21-1-2002 <br> Address:Qalqilia-KufrQaddom</p>
+    <div class="info"></div>
+
+  </div>
+
+  <div class="preview" data-target="p-2">
+    <i class="fas fa-times"></i>
+    <img src="Images\q.jpg" width="300px" height="300px">
+    <h3>Taima Hamadneh</h3>
+
+    <p>Taima Hamadneh@gmail.com <br> BirthDate:9-10-2001 <br> Address:Nablus-Asira</p>
+    <div class="price"></div>
+
+  </div>
+
+</div>
+
+<script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();//calling the function(optional)
+  });
+
+  searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+    sidebar.classList.toggle("open");
+    menuBtnChange(); //calling the function(optional)
+  });
+
+  // following are the code to change sidebar button(optional)
+  function menuBtnChange() {
+    if(sidebar.classList.contains("open")){
+      closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+    }else {
+      closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+    }
+  }
+</script>
+
+<script>
+  let preveiwContainer = document.querySelector('.products-preview');
+  let previewBox = preveiwContainer.querySelectorAll('.preview');
+
+  document.querySelectorAll('.profile-con .profilee').forEach(profilee =>{
+    profilee.onclick = () =>{
+      preveiwContainer.style.display = 'flex';
+      let name = profilee.getAttribute('data-name');
+      previewBox.forEach(preview =>{
+        let target = preview.getAttribute('data-target');
+        if(name == target){
+          preview.classList.add('active');
+        }
+      });
+    };
+  });
+
+  previewBox.forEach(close =>{
+    close.querySelector('.fa-times').onclick = () =>{
+      close.classList.remove('active');
+      preveiwContainer.style.display = 'none';
+    };
+  });
+</script>
+
+
+
+
+</body>
+</html>

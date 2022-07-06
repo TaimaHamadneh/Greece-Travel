@@ -1,0 +1,81 @@
+.center{
+    width: 100%;
+    position: absolute;
+    top:5%;
+    left:47%;
+    transform: translate(-50%,-50%);
+}
+
+.letter{
+    color: #243f4d;
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+    transform: perspective(1000px) rotateX(35deg);
+}
+
+.letter .char1,
+.letter .char2,
+.letter .char3,
+.letter .char4,
+.letter .char5,
+.letter .char6,
+.letter .char7,
+.letter .char8,
+.letter .char9,
+.letter .char10,
+.letter .char11,
+.letter .char12,
+.letter .char13
+{
+    display: inline-block;
+    padding: 0 10px;
+    transition: .5s;
+    text-shadow: 0 5px 2px rgba(0,0,0,.1);
+    box-shadow: 10px 50px 20px rgba(0,0,0,.1);
+    filter: blur(0.5px);
+}
+
+.letter .char1,
+.letter .char3,
+.letter .char5,
+.letter .char7,
+.letter .char9,
+.letter .char11,
+.letter .char13
+{
+    background: #dde8ee;
+    transform: skewY(-15deg);
+}
+
+
+.letter .char2,
+.letter .char4,
+.letter .char6,
+.letter .char8,
+.letter .char10,
+.letter .char12
+{
+    transform: skewY(15deg);
+    background: #bad2de;
+}
+
+.letter:hover .char1,
+.letter:hover .char2,
+.letter:hover .char3,
+.letter:hover .char4,
+.letter:hover .char5,
+.letter:hover .char6,
+.letter:hover .char7,
+.letter:hover .char8,
+.letter:hover .char9,
+.letter:hover .char10,
+.letter:hover .char11,
+.letter:hover .char12,
+.letter:hover .char13
+{
+    background: #bad2de;
+    transform: skewY(0deg);
+    filter: blur(0);
+    box-shadow: 0 2px 2px rgba(0,0,0,.1);
+}

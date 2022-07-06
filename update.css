@@ -1,0 +1,324 @@
+body{
+    background: #dde8ee;
+    display: grid;
+    font-family:"Viner Hand ITC";
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.cont{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 25rem ;
+}
+.cont .title{
+    font-size: 3.5rem;
+    color: #243f4d;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
+.center{
+    width: 100%;
+    position: absolute;
+    top:5%;
+    left:47%;
+    transform: translate(-50%,-50%);
+}
+
+.letter{
+    color: #243f4d;
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+    transform: perspective(1000px) rotateX(35deg);
+}
+
+.letter .char1,
+.letter .char2,
+.letter .char3,
+.letter .char4,
+.letter .char5,
+.letter .char6,
+.letter .char7,
+.letter .char8,
+.letter .char9,
+.letter .char10,
+.letter .char11,
+.letter .char12,
+.letter .char13
+{
+    display: inline-block;
+    padding: 0 10px;
+    transition: .5s;
+    text-shadow: 0 5px 2px rgba(0,0,0,.1);
+    box-shadow: 10px 50px 20px rgba(0,0,0,.1);
+    filter: blur(0.5px);
+}
+
+.letter .char1,
+.letter .char3,
+.letter .char5,
+.letter .char7,
+.letter .char9,
+.letter .char11,
+.letter .char13
+{
+    background: #dde8ee;
+    transform: skewY(-15deg);
+}
+
+
+.letter .char2,
+.letter .char4,
+.letter .char6,
+.letter .char8,
+.letter .char10,
+.letter .char12
+{
+    transform: skewY(15deg);
+    background: #bad2de;
+}
+
+.letter:hover .char1,
+.letter:hover .char2,
+.letter:hover .char3,
+.letter:hover .char4,
+.letter:hover .char5,
+.letter:hover .char6,
+.letter:hover .char7,
+.letter:hover .char8,
+.letter:hover .char9,
+.letter:hover .char10,
+.letter:hover .char11,
+.letter:hover .char12,
+.letter:hover .char13
+{
+    background: #bad2de;
+    transform: skewY(0deg);
+    filter: blur(0);
+    box-shadow: 0 2px 2px rgba(0,0,0,.1);
+}
+
+.add-form{
+    position: relative;
+    margin-Top: 190px;
+    padding-left: 550px;
+}
+.form{
+    position: relative;
+    width: 50rem;
+    height: 3rem;
+    margin-bottom: 20px;
+}
+.form input{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 30rem;
+    border:2px solid;
+    border-radius:.5rem ;
+    font-size: 12px;
+    color: #243f4d;
+    outline: none;
+    padding: 1.25rem;
+    background: none;
+    padding-left:16rem;
+    margin-bottom: 20px;
+
+}
+
+.form_input:hover{
+    border-color:#111c22;
+    border-style: double;
+}
+
+.form_input:focus{
+    position: relative;
+    border-color: #111c22;
+    border-style: double;
+    padding-left:0rem;
+    font-size: 15px;
+}
+
+.form_label{
+    position: absolute;
+    left: .3rem;
+    top:1.3rem;
+    font-size: 15px;
+    padding: 0 0 .5rem;
+    color: #243f4d;
+    cursor: text;
+    transition: top 200ms ease-in,
+    left 200ms ease-in,
+    font-size 200ms ease-in;
+    background-color:#dde8ee;
+}
+
+.form_input:focus ~ .form_label
+{
+    top: -1rem;
+    font-size: 15px;
+    left: .8rem;
+}
+
+
+.addTour{
+    position:absolute;
+    top:106%;
+    left:40%;
+    width:200px;
+    height:70px;
+    cursor: pointer;
+}
+button{
+    top:0;
+    left:0;
+    position:relative;
+    z-index: 1;
+    appearance: none;
+    width:400px;
+    height:50px;
+}
+
+button{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: #3e5667;
+    border-radius: 80px;
+    color: #FFFFFF;
+    font-size: 17px;
+    text-align:revert;
+    transition: 0.5s;
+    box-shadow: 0 15px 25px #3e5690;
+}
+
+button{
+
+    background:#243f4d;
+    box-shadow: 0 15px 25px #243f4d;
+}
+
+.sub {
+    z-index: 3;
+    position:absolute;
+    top:13%;
+    left:5%;
+    width:47px;
+    height:47px;
+    background: #ffffff;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+
+.sub::before{
+    content:'';
+    position: absolute;
+    top:15px;
+    left:4px;
+    width:8px;
+    height:8px;
+    border-radius: 50%;
+    background: #3e5667;
+    box-shadow: 30px 0 0 #3e5667;
+
+}
+
+.sub:hover::before{
+
+    background: #3e5667;
+    box-shadow: 31px 0 0 #3e5667;
+
+}
+
+.sub::after{
+    content:'';
+    position: absolute;
+    bottom:10px ;
+    width:25px;
+    height:6px;
+    left:calc(50% - 12.5px);
+    border-radius: 3px;
+    background: #3e5667;
+    transition: 0.5s;
+
+
+}
+
+.smile{
+    z-index: 3;
+    position:absolute;
+    top:13%;
+    left:73%;
+    width:47px;
+    height:47px;
+    background: #ffffff;
+    border-radius: 50%;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.smile::before{
+    content:'';
+    position: absolute;
+    top:15px;
+    left:4px;
+    width:8px;
+    height:8px;
+    border-radius: 50%;
+    background: #3e5667;
+    box-shadow: 30px 0 0 #3e5667;
+
+}
+
+.smile:hover::before{
+
+    background: #3e5667;
+    box-shadow: 31px 0 0 #3e5667;
+
+}
+
+.smile::after{
+    content:'';
+    position: absolute;
+    bottom:10px ;
+    width:25px;
+    height:10px;
+    left:calc(50% - 12.5px);
+    border-bottom-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+    background: #3e5667;
+    transition: 0.5s;
+}
+
+
+.image {
+    position: relative;
+    margin-top: -400px;
+    left: 65%;
+
+}
+.image img{
+    width: 400px;
+    height: 400px;
+}

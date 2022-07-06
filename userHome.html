@@ -1,0 +1,359 @@
+<?php
+?>
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styleUser.css">
+    <link rel="stylesheet" href="styleUsercards.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="sidebar">
+    <div class="logo-details">
+        <div class="logo_name">User's List</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+
+        <li>
+            <a href="userHome.html" class="active">
+                <i class='fas fa-home' ></i>
+                <span class="links_name">Home</span>
+            </a>
+            <span class="tooltip">Home</span>
+        </li>
+     <!--   <li>
+            <i class='bx bx-search' ></i>
+            <input type="text" placeholder="Search...">
+            <span class="tooltip">Search</span>
+        </li>  -->
+        <li>
+            <a href="UserProfile.php">
+                <i class='bx bx-user' ></i>
+                <span class="links_name">Profile</span>
+            </a>
+            <span class="tooltip">Profile</span>
+        </li>
+        <li>
+            <a href="userMessage.php">
+                <i class='bx bx-chat' ></i>
+                <span class="links_name">Send Messages</span>
+            </a>
+            <span class="tooltip">Send Messages</span>
+        </li>
+        <li>
+            <a href="Booking.php">
+                <i class='fa fa-ticket' ></i>
+                <span class="links_name">Book</span>
+            </a>
+            <span class="tooltip">Book</span>
+        </li>
+        <li>
+            <a href="Reserved.php">
+                <i class='fa fa-book' ></i>
+                <span class="links_name">Reserved travellers</span>
+            </a>
+            <span class="tooltip">Reserved travellers</span>
+        </li>
+        <li>
+            <a target="_top"  href="map.html" >
+                <i class='fas fa-map-marker-alt' ></i>
+                <span class="links_name">Map</span>
+            </a>
+            <span class="tooltip">Map</span>
+        </li>
+
+        <li class="profile">
+            <div class="profile-details">
+                <!--<img src="profile.jpg" alt="profileImg">-->
+                <div class="name_job">
+                    <a target="_top"  href="SignUpPage.html" >
+                        <i class='bx bx-log-out' ></i>
+                        <span class="links_name"></span>
+                    </a>
+                    <i class='bx bx-log-out' ></i>
+                    <span class="links_name"></span>
+                </div>
+            </div>
+
+        </li>
+    </ul>
+</div>
+
+
+
+    <div class="container">
+
+        <h3 class="title"> Greece </h3>
+
+        <div class="products-container">
+
+            <div class="product" data-name="p-1">
+                <img src="Images/1.jpg" alt="">
+                <h3> Αθήνα (أثينا)</h3>
+            </div>
+
+            <div class="product" data-name="p-2">
+                <img src="Images/2.jpg" alt="">
+                <h3>Θεσσαλονίκη (سالونيكِ)</h3>
+            </div>
+
+            <div class="product" data-name="p-3">
+                <img src="Images/3.jpg" alt="">
+                <h3>Ἡράκλειον (هيراكليون)</h3>
+            </div>
+
+            <div class="product" data-name="p-4">
+                <img src="Images/4.jpg" alt="">
+                <h3>(باتراس)Πάτρ </h3>
+            </div>
+
+            <div class="product" data-name="p-5">
+                <img src="Images/5.jpg" alt="">
+                <h3>(خانية) Χανιά </h3>
+            </div>
+
+            <div class="product" data-name="p-6">
+                <img src="Images/6.jpg" alt="">
+                <h3>Ναύπλιο(نافبليو) </h3>
+            </div>
+
+            <div class="product" data-name="p-7">
+                <img src="Images/7.jpg" alt="">
+                <h3>Ιωάννινα(يوانينا) </h3>
+            </div>
+            <div class="product" data-name="p-8">
+                <img src="Images/8.jpg" alt="">
+                <h3>Ρόδος(رودس) </h3>
+            </div>
+            <div class="product" data-name="p-9">
+                <img src="Images/9.jpg" alt="">
+                <h3>Λάρισα(لاريسا) </h3>
+            </div>
+
+            <div class="product" data-name="p-10">
+            <img src="Images/10.jpg" alt="">
+            <h3>Βόλος(ڤولوس) </h3>
+        </div>
+
+            <div class="product" data-name="p-11">
+                <img src="Images/11.jpg" alt="">
+                <h3>Καβάλα(كافالا) </h3>
+            </div>
+
+            <div class="product" data-name="p-12">
+                <img src="Images/12.jpg" alt="">
+                <h3>Καλαμάτα(كالاماتا) </h3>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <div class="products-preview">
+
+        <div class="preview" data-target="p-1">
+            <i class="fas fa-times"></i>
+            <img src="Images/1.jpg" alt="">
+            <h3>Αθήνα (أثينا)</h3>
+            <p>هي عاصمة اليونان وأكبر مدنها. تهيمن أثينا على منطقة أتيكا وهي واحدة من أقدم المدن في العالم، ويمتد تاريخها المسجل إلى أكثر من 3400 عام، ويبدأ الوجود البشري فيها ما بين الألفية الحادية عشرة والسابعة قبل الميلاد</p>
+
+            <div class="buttons">
+
+                <a href="https://ar.wikipedia.org/wiki/%D8%A3%D8%AB%D9%8A%D9%86%D8%A7" class="cart" target="_blank" >More details</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-2">
+            <i class="fas fa-times"></i>
+            <img src="Images/2.jpg" alt="">
+            <h3>Θεσσαλονίκη (سالونيكِ)</h3>
+            <p>مدينة يونانية ومركز لبلدية تقع في شمال البلاد، وهي عاصمة لمنطقة (إقليم) مقدونيا الوسطى الإدارية وأيضًا عاصمة إحدى مقاطعات هذا الإقليم والتي تحمل نفس اسم المدينة.
+
+            </p>
+            <div class="buttons">
+                <a href="https://ar.wikipedia.org/wiki/%D8%B3%D8%A7%D9%84%D9%88%D9%86%D9%8A%D9%83" class="cart" target="_blank">More details</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-3">
+            <i class="fas fa-times"></i>
+            <img src="Images/3.jpg" alt="">
+            <h3>Ἡράκλειον (هيراكليون)</h3>
+
+            <p> مدينة يونانية ومركز لبلدية تقع في جنوب البلاد وهي عاصمة إقليم كريت الإداري، وأيضاً مركز مقاطعة كاندية إحدى مقاطعات هذا الإقليم. </p>
+            <div class="buttons">
+                <a href="https://ar.wikipedia.org/wiki/%D9%85%D8%AF%D9%8A%D9%86%D8%A9_%D9%87%D8%B1%D9%82%D9%84%D9%8A%D9%88%D9%86" class="cart" target="_blank">More details</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-4">
+            <i class="fas fa-times"></i>
+            <img src="Images/4.jpg" alt="">
+            <h3>(باتراس)Πάτρ</h3>
+
+            <p> مدينة يونانية تقع في غرب البلاد، وهي عاصمة مقاطعة غرب اليونان الإدارية، وأيضاً مركز مقاطعة أخايا إحدى المقاطعات الثلاث المشكّلة لمنطقة غرب اليونان.</p>
+            <div class="buttons">
+                <a href="https://ar.wikipedia.org/wiki/%D8%A8%D8%A7%D8%AA%D8%B1%D8%A7%D8%B3" class="cart" target="_blank">More details</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-5">
+            <i class="fas fa-times"></i>
+            <img src="Images/5.jpg" alt="">
+            <h3>(خانية) Χανιά</h3>
+
+            <p>مدينة يونانية تقع في جنوب البلاد ضمن جزيرة كريت، وهي مركز مقاطعة خانيا أحد مقاطعات منطقة كريت الإدارية.</p>
+            <div class="buttons">
+                <a href="https://ar.wikipedia.org/wiki/%D8%AE%D8%A7%D9%86%D9%8A%D8%A9" class="cart" target="_blank">More details </a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-6">
+            <i class="fas fa-times"></i>
+            <img src="Images/6.jpg" alt="">
+            <h3>Ναύπλιο(نافبليو)  </h3>
+
+            <p>مدينة يونانية تقع في جنوب البلاد ضمن منطقة البيلوبونيز الإدارية، وهي مركز مقاطعة أرغوليذا ضمن هذه المنطقة الإدارية.</p>
+            <div class="buttons">
+                <a href="https://ar.wikipedia.org/wiki/%D9%86%D8%A7%D9%81%D8%A8%D9%84%D9%8A%D9%88" class="cart" target="_blank">More details</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-7">
+            <i class="fas fa-times"></i>
+            <img src="Images/7.jpg" alt="">
+            <h3>Ιωάννινα(يوانينا)  </h3>
+
+            <p> مدينة يونانية تقع في شمال غرب البلاد، وهي عاصمة منطقة إبيروس الإدارية، وأيضاً مركز أحد مقاطعات هذه المنطقة الإدارية.</p>
+            <div class="buttons">
+                <a href="https://ar.wikipedia.org/wiki/%D9%8A%D9%88%D8%A7%D9%86%D9%8A%D9%86%D8%A7" class="cart" target="_blank">More details</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-8">
+            <i class="fas fa-times"></i>
+            <img src="Images/8.jpg" alt="">
+            <h3>Ρόδος(رودس)  </h3>
+
+            <p> هي جزيرة يونانية في البحر الأبيض المتوسط. تعرف الجزيرة تاريخياً بكونها موقع تواجد تمثال أبولو رودس سابقاً، وهو أحد عجائب الدنيا السبع. تقع بالقرب من الساحل الجنوبي لتركيا، في منتصف المسافة بين جزر اليونان الرئيسية وقبرص. تعد رودس أبعد الجزر الشرقية بالنسبة لليونان وبحر إيجة.</p>
+            <div class="buttons">
+                <a href="https://ar.wikipedia.org/wiki/%D8%B1%D9%88%D8%AF%D8%B3" class="cart" target="_blank">More details</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-9">
+            <i class="fas fa-times"></i>
+            <img src="Images/9.jpg" alt="">
+            <h3>Λάρισα(لاريسا)  </h3>
+
+            <p>مدينة يونانية تقع في شمال وسط البلاد، وهي عاصمة منطقة ثيساليا الإدارية وأيضا عاصمة مقاطعة لاريسا أحد المقاطعات المكونة لثيساليا.</p>
+            <div class="buttons">
+                <a href="https://ar.wikipedia.org/wiki/%D9%84%D8%A7%D8%B1%D9%8A%D8%B3%D8%A7" class="cart" target="_blank">More details</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-10">
+            <i class="fas fa-times"></i>
+            <img src="Images/10.jpg" alt="">
+            <h3>Βόλος(ڤولوس)  </h3>
+
+            <p>مدينة يونانية تقع في وسط البلاد ضمن منطقة ثيساليا الإدارية، وهي عاصمة مقاطعة ماغنيسيا التابعة لثيساليا.</p>
+            <div class="buttons">
+                <a href="https://ar.wikipedia.org/wiki/%D9%81%D9%88%D9%84%D9%88%D8%B3" class="cart" target="_blank">More details</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-11">
+            <i class="fas fa-times"></i>
+            <img src="Images/11.jpg" alt="">
+            <h3>Καβάλα(كافالا)  </h3>
+
+            <p>مدينة يونانية تقع في شمال البلاد ضمن منطقة مقدونيا الشرقية وتراقيا الإدارية، وهي مركز مقاطعة تحمل نفس اسمها ضمن هذه المنطقة الإدارية.</p>
+            <div class="buttons">
+                <a href="https://ar.wikipedia.org/wiki/%D9%83%D8%A7%D9%81%D8%A7%D9%84%D8%A7" class="cart" target="_blank">More details</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-12">
+            <i class="fas fa-times"></i>
+            <img src="Images/12.jpg" alt="">
+            <h3>Καλαμάτα(كالاماتا)  </h3>
+
+            <p>مدينة تقع في جنوب اليونان وهي عاصمة مقاطعة ميسينيا. </p>
+            <div class="buttons">
+                <a href="https://ar.wikipedia.org/wiki/%D9%83%D8%A7%D9%84%D8%A7%D9%85%D8%A7%D8%AA%D8%A7" class="cart" target="_blank">More details</a>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+<script>
+    let sidebar = document.querySelector(".sidebar");
+    let closeBtn = document.querySelector("#btn");
+    let searchBtn = document.querySelector(".bx-search");
+
+    closeBtn.addEventListener("click", ()=>{
+        sidebar.classList.toggle("open");
+        menuBtnChange();//calling the function(optional)
+    });
+
+    searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+        sidebar.classList.toggle("open");
+        menuBtnChange(); //calling the function(optional)
+    });
+
+    // following are the code to change sidebar button(optional)
+    function menuBtnChange() {
+        if(sidebar.classList.contains("open")){
+            closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+        }else {
+            closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+        }
+    }
+
+
+
+
+</script>
+<script>
+    let preveiwContainer = document.querySelector('.products-preview');
+    let previewBox = preveiwContainer.querySelectorAll('.preview');
+
+    document.querySelectorAll('.products-container .product').forEach(product =>{
+        product.onclick = () =>{
+            preveiwContainer.style.display = 'flex';
+            let name = product.getAttribute('data-name');
+            previewBox.forEach(preview =>{
+                let target = preview.getAttribute('data-target');
+                if(name == target){
+                    preview.classList.add('active');
+                }
+            });
+        };
+    });
+
+    previewBox.forEach(close =>{
+        close.querySelector('.fa-times').onclick = () =>{
+            close.classList.remove('active');
+            preveiwContainer.style.display = 'none';
+        };
+    });
+</script>
+
+
+</body>
+</html>

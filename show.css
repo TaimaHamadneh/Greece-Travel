@@ -1,0 +1,193 @@
+.conn{
+    width: 380px;
+    height:500px;
+    margin: 8% auto;
+    background:#eef4f7;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 10px 10px  #243f4d;
+    overflow: hidden;
+}
+form textarea{
+    width:100%;
+    height:70% ;
+    position: relative;
+    padding: 2rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0,0,0,0);
+    background-color:rgba(230,230,230,0.6);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    transition: .3s;
+}
+p{
+    postion:relative;
+    padding-top: 20px;
+    text-align: center;
+    margin-left: 5px;
+    color:#243f4d;
+}
+h3{
+    text-align: center;
+    margin-bottom: 5px;
+    color:#777;
+}
+
+
+
+.conn form{
+    width:280px;
+    position: absolute;
+    top:100px;
+    left:40px;
+    transition: 0.5s;
+}
+
+form input{
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.btn-box{
+    width:100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+form button{
+    width:110px;
+    height: 35px;
+    margin: 0 10px;
+    background: linear-gradient(to right,#243f4d,#74a5be);
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+#form2{
+    left: 450px;
+}
+
+#form3{
+    left: 450px;
+}
+
+.step-row{
+    width: 380px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px #000;
+    position: relative;
+}
+
+.step-col{
+    width:270px;
+    text-align: center;
+    color: #243f4d;
+    position: relative;
+}
+small{
+    color:#d3dce0;
+}
+
+#progress{
+    position: absolute;
+    height: 100%;
+    width:100% ;
+    background: linear-gradient(to right,#243f4d,#74a5be);
+    transition: 1s;
+
+}
+
+body{
+    background:#cbdde7;
+}
+.center{
+    width: 100%;
+    position: absolute;
+    top:5%;
+    left:47%;
+    transform: translate(-50%,-50%);
+}
+
+.letter{
+    color: #243f4d;
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+    transform: perspective(1000px) rotateX(35deg);
+}
+
+.letter .char1,
+.letter .char2,
+.letter .char3,
+.letter .char4,
+.letter .char5,
+.letter .char6,
+.letter .char7,
+.letter .char8,
+.letter .char9,
+.letter .char10,
+.letter .char11,
+.letter .char12,
+.letter .char13
+{
+    display: inline-block;
+    padding: 0 10px;
+    transition: .5s;
+    text-shadow: 0 5px 2px rgba(0,0,0,.1);
+    box-shadow: 10px 50px 20px rgba(0,0,0,.1);
+    filter: blur(0.5px);
+}
+
+.letter .char1,
+.letter .char3,
+.letter .char5,
+.letter .char7,
+.letter .char9,
+.letter .char11,
+.letter .char13
+{
+    background: #dde8ee;
+    transform: skewY(-15deg);
+}
+
+
+.letter .char2,
+.letter .char4,
+.letter .char6,
+.letter .char8,
+.letter .char10,
+.letter .char12
+{
+    transform: skewY(15deg);
+    background: #bad2de;
+}
+
+.letter:hover .char1,
+.letter:hover .char2,
+.letter:hover .char3,
+.letter:hover .char4,
+.letter:hover .char5,
+.letter:hover .char6,
+.letter:hover .char7,
+.letter:hover .char8,
+.letter:hover .char9,
+.letter:hover .char10,
+.letter:hover .char11,
+.letter:hover .char12,
+.letter:hover .char13
+{
+    background: #bad2de;
+    transform: skewY(0deg);
+    filter: blur(0);
+    box-shadow: 0 2px 2px rgba(0,0,0,.1);
+}

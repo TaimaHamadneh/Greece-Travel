@@ -1,0 +1,86 @@
+
+label{
+    position:absolute;
+    top:0;
+    left:0;
+    margin-left:200px;
+    margin-top:-10px;
+    width:120px;
+    height:50px;
+    cursor: pointer;
+}
+label input{
+    top:0;
+    left:0;
+    position:relative;
+    z-index: 1;
+    appearance: none;
+}
+label span{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: #3e5667;
+    border-radius: 80px;
+    transition: 0.5s;
+    box-shadow: 0 15px 25px #3e5690;
+}
+label input:checked~span{
+    background:#cc6600;
+    box-shadow: 0 15px 25px #cc6624;
+}
+
+label span i{
+    position: absolute;
+    margin: 9px;
+    margin-top: 2px;
+    width:45px;
+    height:45px;
+    background: #ffffff;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+label input:checked~span i{
+    left:60px;
+}
+
+label span i::before{
+    content:'';
+    position: absolute;
+    top:15px;
+    left:4px;
+    width:8px;
+    height:8px;
+    border-radius: 50%;
+    background: #3e5667;
+    box-shadow: 30px 0 0 #3e5667;
+}
+label input:checked~span i::before{
+    background:#cc6600;
+    box-shadow: 31px 0 0 #cc6624;
+}
+
+label span i::after{
+    content:'';
+    position: absolute;
+    bottom:10px ;
+    width:25px;
+    height:6px;
+    left:calc(50% - 12.5px);
+    border-radius: 3px;
+    background: #3e5667;
+    transition: 0.5s;
+}
+
+label input:checked~span i::after{
+    bottom:5px ;
+    border-radius: 0px;
+    border-bottom-left-radius:15px ;
+    border-bottom-right-radius:15px ;
+    height:13px;
+    background:#cc6600;
+
+}
